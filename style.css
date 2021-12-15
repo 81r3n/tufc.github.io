@@ -1,0 +1,392 @@
+@charset "uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,600;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #2B2B2B;
+    line-height: 1.6;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1420px;
+    }
+}
+
+.navbar {
+    background-color: #8D141D;
+    height: 80px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .92);
+    font-size: 13.5px;
+    letter-spacing: 0.6px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #E0BD53;
+}
+
+.social-icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.social-icon i:hover {
+    color: #E0BD53;
+}
+
+.button_icon {
+    width: 1.7em;
+    height: 1.7em;
+    margin-right: 25px;
+}
+
+.my-btn {
+    background-color: #E8C048;
+    padding-right: 40px;
+    border-radius: 30px;
+    transition: background-color ease 350ms;
+    font-size: 1vw;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+.my-btn2 {
+    background-color: #740F1F;
+    color: #fff;
+    font-size: 11px !important;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 50px;
+    transition: background-color ease 350ms;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    position: relative;
+    bottom: -300px;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+
+.my-btn:hover {
+    background-color: #d0ab3b;
+}
+
+.my-btn2:hover {
+    background-color: #d0ab3b;
+    color: #000;
+    font-weight: 700;
+}
+
+.my-btn.fixture {
+    background-color: #740F1F;
+    color: #fff;
+    font-size: 11px !important;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 50px;
+    transition: all ease 350ms;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.my-btn.fixture:hover {
+    background-color: #d0ab3b;
+    color: #000;
+    font-weight: bold;
+}
+
+.brand-img {
+    transition: transform ease-out 250ms;
+}
+
+.my-btn2:hover+.brand-img {
+    transform: scale(1.02);
+    box-shadow: 3px 3px 15px 8px rgba(0, 0, 0, 0.1);
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: yellow;
+}
+
+.read-more {
+    color: #C4A139;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: #C4A139;
+    text-decoration: underline;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none;
+}
+
+.carousel h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5.2vw;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.15vw;
+}
+
+.carousel p {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.8vw;
+    letter-spacing: 0.15vw;
+    margin: 2vw 0;
+}
+
+/*awards*/
+.awards-heading {
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    margin-bottom: 35px;
+    position: relative;
+    letter-spacing: 0.15vw;
+}
+
+/*video/match scores*/
+.match-scores h6 {
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3vw;
+    font-size: 3vw;
+}
+
+.match-scores span {
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3vw;
+    font-size: 4.5vw;
+}
+
+p.match-league {
+    font-size: 1.1vw;
+}
+
+span.match-time {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+/*News*/
+.news h2 {
+    font-family: 'Anton', sans-serif;
+    color: #AB3043;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    margin-bottom: 35px;
+    position: relative;
+    letter-spacing: 0.14vw;
+}
+
+.news h3 {
+    font-family: 'Anton', sans-serif;
+    color: #0A1B2F;
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 0.03vw;
+    position: relative;
+}
+
+.news h3.other-latest {
+    font-family: 'Anton', sans-serif;
+    color: #0A1B2F;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 0.05vw;
+    position: relative;
+}
+
+.tile-image {
+    transition: transform 500ms ease-out;
+}
+
+.red-line {
+    background-color: red;
+    height: 2px;
+    width: 50px;
+    transition: width 500ms ease-out;
+}
+
+.news-hover {
+    background-color: #f0f0f0;
+    transition: box-shadow ease-out 250ms;
+    box-shadow: transparent;
+    border: none;
+}
+
+.news-hover:hover .tile-image {
+    transform: scale(1.05);
+}
+
+.news-hover:hover {
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.09);
+}
+
+.news-hover:hover .red-line {
+    width: 80px;
+}
+
+/*about us*/
+.about h2 {
+    font-family: 'Anton', sans-serif;
+    color: #AB3043;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    margin-bottom: 35px;
+    position: relative;
+    letter-spacing: 0.14vw;
+}
+
+.about h2 span {
+    color: #BF364B;
+}
+
+.about p {
+    line-height: 2.2;
+}
+
+/*our kit line up*/
+.kit h2,
+.shop-brands h2,
+.fixtures h2,
+.partners h2 {
+    font-family: 'Anton', sans-serif;
+    color: #030D1A;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    margin-bottom: 35px;
+    position: relative;
+    letter-spacing: 0.14vw;
+}
+
+.kit h2 span,
+.shop-brands h2 span,
+.fixtures span,
+.partners span {
+    color: #BF364B;
+}
+
+.kit h6 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #C4A139;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.owl-carousel .owl-stage {
+    transition-timing-function: linear !important;
+}
+
+/*match fixtures*/
+.last-match {
+    background-color: #fff;
+    border-radius: 12px;
+    transition: box-shadow ease-out 250ms;
+}
+
+.next-match,
+.last-match {
+    background-color: #fff;
+    border-radius: 12px;
+    transition: box-shadow ease-out 250ms;
+    /*outline-color: #740F1F;*/
+    outline-color: #dedddd;
+    outline-style: dotted;
+    outline-width: 2px;
+}
+
+.next-match:hover,
+.last-match:hover {
+    box-shadow: 3px 3px 15px 8px rgba(0, 0, 0, 0.1);
+}
+
+.match-status {
+    color: #AB3043;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.league {
+    font-weight: bold;
+}
+
+.score-time {
+    background-color: #010912;
+    padding: 12px 20px;
+    color: #fff;
+    line-height: 1;
+}
+
+.score-time span {
+    font-size: 2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.score-time p {
+    color: #FFF;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.versus {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/*match fixtures tab buttons*/
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    background-color: #f0f0f0;
+    outline: solid 2px #f0f0f0;
+    border: 0;
+    color: #BF364B;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 80px;
+    height: 50px;
+    box-sizing: content-box;
+    transition: outline ease-out 250ms;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #BF364B;
+    outline: solid 2px #BF364B;
+    border: 0;
+}
+
+.nav-pills .nav-link:hover {
+    outline: solid 2px #BF364B;
+}
