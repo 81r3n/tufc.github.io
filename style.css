@@ -390,3 +390,55 @@ span.match-time {
 .nav-pills .nav-link:hover {
     outline: solid 2px #BF364B;
 }
+
+/*Footer / social icons*/
+.social-tile{
+
+    outline:  2px #fff transparent;
+
+
+}
+.social-tile:hover{
+
+    outline:  2px #fff solid;
+
+
+} 
+
+footer h6{
+
+    text-transform: uppercase;
+    color: #E0BD53;
+    font-family: 'Anton',sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+footer a{
+
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: color ease-out 250ms;
+}
+footer a:hover{
+
+   color: #BF364B;
+}
+
+.contact-details i{
+
+    font-size: 16px;
+    color:#E0BD53 ;
+}
+p.copyright{
+
+    color: #fff;
+    font-size: 11px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+p.copyright span{
+    color: #E0BD53;
+}
