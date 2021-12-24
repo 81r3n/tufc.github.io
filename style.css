@@ -14,12 +14,27 @@ body {
     line-height: 1.6;
 }
 
-header {
+/*header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+}*/
+#navigationBar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #fff;
+    transition: top 1200ms ease-in;
+}
+
+#navigationBar.hide {
+
+    top: -1001px;
+    transition: top 1200ms ease-in;
 }
 
 @media (min-width: 1400px) {
@@ -649,6 +664,11 @@ p.copyright span {
 
     header {
         position: static;
+    }
+
+    #navigationBar {
+        position: static;
+
     }
 }
 
