@@ -118,6 +118,16 @@ header {
     transition: transform ease-out 250ms;
 }
 
+.brand-img:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 3px 15px 8px rgba(0, 0, 0, 0.1);
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: yellow;
+
+
+}
+
 .my-btn2:hover+.brand-img {
     transform: scale(1.02);
     box-shadow: 3px 3px 15px 8px rgba(0, 0, 0, 0.1);
@@ -125,6 +135,8 @@ header {
     outline-width: 2px;
     outline-color: yellow;
 }
+
+
 
 .read-more {
     color: #C4A139;
