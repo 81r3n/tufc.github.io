@@ -193,7 +193,7 @@ body {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.4vw;
+    font-size: 36px;
     margin-bottom: 35px;
     position: relative;
     letter-spacing: 0.15vw;
@@ -229,7 +229,7 @@ span.match-time {
     color: #AB3043;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.4vw;
+    font-size: 36px;
     margin-bottom: 35px;
     position: relative;
     letter-spacing: 0.14vw;
@@ -289,7 +289,7 @@ span.match-time {
     color: #AB3043;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.4vw;
+    font-size: 36px;
     margin-bottom: 35px;
     position: relative;
     letter-spacing: 0.14vw;
@@ -312,7 +312,7 @@ span.match-time {
     color: #030D1A;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.4vw;
+    font-size: 36px;
     margin-bottom: 35px;
     position: relative;
     letter-spacing: 0.14vw;
@@ -481,7 +481,7 @@ p.copyright span {
     font-family: 'Anton', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.4vw;
+    font-size: 36px;
     margin-bottom: 35px;
     position: relative;
     letter-spacing: 0.14vw;
@@ -653,6 +653,17 @@ p.copyright span {
         height: 89vh;
         object-fit: cover;
     }
+
+    .hero-image-academy {
+
+
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+
+
+
 }
 
 @media (max-width: 1200px) {
