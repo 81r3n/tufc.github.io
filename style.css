@@ -15,13 +15,12 @@ body {
 }
 
 /*header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+position: sticky;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
 }*/
-
 #navigationBar {
     /*for appear on scroll-up nav bar*/
     position: sticky;
@@ -34,7 +33,6 @@ body {
 }
 
 #navigationBar.hide {
-
     top: -1001px;
     transition: top 1200ms ease-in;
 }
@@ -141,8 +139,6 @@ body {
     outline-style: solid;
     outline-width: 2px;
     outline-color: yellow;
-
-
 }
 
 .my-btn2:hover+.brand-img {
@@ -152,8 +148,6 @@ body {
     outline-width: 2px;
     outline-color: yellow;
 }
-
-
 
 .read-more {
     color: #C4A139;
@@ -486,14 +480,11 @@ p.copyright span {
     margin-bottom: 35px;
     position: relative;
     letter-spacing: 0.14vw;
-
 }
 
 .content p {
-
     line-height: 2.2;
 }
-
 
 .about_mvv h3 {
     font-family: 'Anton', sans-serif;
@@ -516,14 +507,11 @@ p.copyright span {
     text-transform: capitalize;
     color: #740f1f;
     font-size: 21px;
-
 }
 
 #exampleModal p {
     font-size: 12.5px;
-
 }
-
 
 /*players tab buttons*/
 .players .nav-pills .nav-link {
@@ -538,16 +526,12 @@ p.copyright span {
     justify-content: center;
     border-radius: 10px;
     outline: solid 3px #FCE8AC;
-
 }
 
 .players h6 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.7px;
-
-
-
 }
 
 .players .nav-pills .nav-link.active,
@@ -571,7 +555,6 @@ p.copyright span {
 }
 
 .profile-details {
-
     transform: translateY(70px);
     position: absolute;
     bottom: 0;
@@ -579,26 +562,19 @@ p.copyright span {
     right: 0;
     background-color: #8D141D;
     border-top: solid 2px #f2f2f2;
-
-
 }
 
 .profile-details h6 {
-
     font-family: "Anton", sans-serif;
     color: #E0BD53;
     letter-spacing: 0.8px;
     text-transform: capitalize;
     font-size: 16px;
-
 }
 
 .profile-details p {
-
     color: #fff;
     font-size: 13px;
-
-
 }
 
 .player_number {
@@ -612,7 +588,6 @@ p.copyright span {
     border: solid 1px grey;
 }
 
-
 .profile-details {
     transition: transform ease-out 250ms;
 }
@@ -622,7 +597,6 @@ p.copyright span {
     filter: grayscale(99%);
 }
 
-
 .hidden-info {
     opacity: 0;
     transition: opacity eas-out 2s;
@@ -630,35 +604,42 @@ p.copyright span {
 }
 
 .profile-card:hover img {
-
     transform: scale(1.08);
     filter: grayscale(0%);
 }
 
 .profile-card:hover .profile-details {
-
     transform: translateY(0px);
     border-top: solid 2px #f2f2f2;
 }
 
 .profile-card:hover .player_number {
-
     border-bottom: solid 2px #f2f2f2;
-
 }
 
 .profile-card:hover .hidden-info {
-
     opacity: 1;
 }
 
 /*academy page*/
-
 h1.academy-heading {
     color: #E0BD53;
     letter-spacing: 2px !important;
 }
 
+.academy-players img {
+    filter: grayscale(88%);
+    border-radius: 50%;
+    border: 3px solid #e8c048;
+    width: 180px;
+    height: 180px;
+
+    transition: filter ease-out 350ms;
+}
+
+.academy-players img:hover {
+    filter: grayscale(0%);
+}
 
 /*media queries*/
 @media (min-width: 1450px) {
@@ -668,8 +649,6 @@ h1.academy-heading {
     }
 
     .hero-image-academy {
-
-
         width: 100%;
         height: 550px;
         object-fit: cover;
@@ -678,9 +657,6 @@ h1.academy-heading {
     h1.academy-heading {
         font-size: 45px;
     }
-
-
-
 }
 
 @media (max-width: 1200px) {
@@ -698,7 +674,6 @@ h1.academy-heading {
 
     #navigationBar {
         position: static;
-
     }
 }
 
