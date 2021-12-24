@@ -9,6 +9,8 @@ $(document).ready(function() {
         items: 4
     });
 
+    // for appear on scroll-up nav
+
     (function() {
         var doc = document.documentElement;
         var w = window;
@@ -36,7 +38,7 @@ $(document).ready(function() {
             prevScroll = curScroll;
         };
         var toggleHeader = function(direction, curScroll) {
-            if (direction === 2 && curScroll > 600) {
+            if (direction === 2 && curScroll > 87) {
                 //replace 52 with the height of your header in px
                 header.classList.add('hide');
                 prevDirection = direction;
