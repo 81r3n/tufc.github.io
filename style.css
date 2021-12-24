@@ -477,7 +477,8 @@ p.copyright span {
     transform: rotate(180deg);
 }
 
-.content h2 {
+.content h2,
+.content h1 {
     font-family: 'Anton', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -486,6 +487,11 @@ p.copyright span {
     position: relative;
     letter-spacing: 0.14vw;
 
+}
+
+.content p {
+
+    line-height: 2.2;
 }
 
 
@@ -646,6 +652,13 @@ p.copyright span {
     opacity: 1;
 }
 
+/*academy page*/
+
+h1.academy-heading {
+    color: #E0BD53;
+    letter-spacing: 2px !important;
+}
+
 
 /*media queries*/
 @media (min-width: 1450px) {
@@ -660,6 +673,10 @@ p.copyright span {
         width: 100%;
         height: 550px;
         object-fit: cover;
+    }
+
+    h1.academy-heading {
+        font-size: 45px;
     }
 
 
