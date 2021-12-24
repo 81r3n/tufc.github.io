@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -13,6 +12,14 @@ body {
     font-size: 14px;
     color: #2B2B2B;
     line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 @media (min-width: 1400px) {
@@ -23,7 +30,6 @@ body {
 
 .navbar {
     background-color: #8D141D;
-    height: 80px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -248,7 +254,7 @@ span.match-time {
     width: 80px;
 }
 
-/*about us*/
+/*home_about us*/
 .about h2 {
     font-family: 'Anton', sans-serif;
     color: #AB3043;
@@ -365,7 +371,7 @@ span.match-time {
 }
 
 /*match fixtures tab buttons*/
-.nav-pills .nav-link {
+.fixtures .nav-pills .nav-link {
     border-radius: .25rem;
     background-color: #f0f0f0;
     outline: solid 2px #f0f0f0;
@@ -379,42 +385,36 @@ span.match-time {
     transition: outline ease-out 250ms;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.fixtures .nav-pills .nav-link.active,
+.fixtures .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #BF364B;
     outline: solid 2px #BF364B;
     border: 0;
 }
 
-.nav-pills .nav-link:hover {
+.fixtures .nav-pills .nav-link:hover {
     outline: solid 2px #BF364B;
 }
 
 /*Footer / social icons*/
-.social-tile{
-
-    outline:  2px #fff transparent;
-
-
+.social-tile {
+    outline: 2px #fff transparent;
 }
-.social-tile:hover{
 
-    outline:  2px #fff solid;
+.social-tile:hover {
+    outline: 2px #fff solid;
+}
 
-
-} 
-
-footer h6{
-
+footer h6 {
     text-transform: uppercase;
     color: #E0BD53;
-    font-family: 'Anton',sans-serif;
+    font-family: 'Anton', sans-serif;
     letter-spacing: 2px;
     font-size: 15px;
 }
-footer a{
 
+footer a {
     font-size: 12px;
     letter-spacing: 1px;
     display: block;
@@ -422,23 +422,235 @@ footer a{
     color: #fff;
     transition: color ease-out 250ms;
 }
-footer a:hover{
 
-   color: #BF364B;
+footer a:hover {
+    color: #BF364B;
 }
 
-.contact-details i{
-
+.contact-details i {
     font-size: 16px;
-    color:#E0BD53 ;
+    color: #E0BD53;
 }
-p.copyright{
 
+p.copyright {
     color: #fff;
     font-size: 11px;
     margin: 0;
     letter-spacing: 1px;
 }
-p.copyright span{
+
+p.copyright span {
     color: #E0BD53;
+}
+
+/*about us page*/
+.about-hero-img svg {
+    transform: rotate(180deg);
+}
+
+.content h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    margin-bottom: 35px;
+    position: relative;
+    letter-spacing: 0.14vw;
+
+}
+
+
+.about_mvv h3 {
+    font-family: 'Anton', sans-serif;
+    color: #ebb517;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    position: relative;
+    letter-spacing: 0.14vw;
+}
+
+.about_mvv p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+#exampleModal h4 {
+    text-transform: capitalize;
+    color: #740f1f;
+    font-size: 21px;
+
+}
+
+#exampleModal p {
+    font-size: 12.5px;
+
+}
+
+
+/*players tab buttons*/
+.players .nav-pills .nav-link {
+    width: 160px;
+    height: 105px;
+    background-color: #FCE8AC;
+    color: #505050;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    outline: solid 3px #FCE8AC;
+
+}
+
+.players h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+
+
+
+}
+
+.players .nav-pills .nav-link.active,
+.players .nav-pills .show>.nav-link {
+    background-color: #f1cb5a;
+    outline: solid 3px #f1cb5a;
+    border: 0;
+    color: #8F2737 !important;
+}
+
+.players .nav-pills .nav-link:hover {
+    outline: solid 3px #f1cb5a;
+}
+
+.profile-card {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-details {
+
+    transform: translateY(70px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #8D141D;
+    border-top: solid 2px #f2f2f2;
+
+
+}
+
+.profile-details h6 {
+
+    font-family: "Anton", sans-serif;
+    color: #E0BD53;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    font-size: 16px;
+
+}
+
+.profile-details p {
+
+    color: #fff;
+    font-size: 13px;
+
+
+}
+
+.player_number {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #fff;
+    font-size: 21px;
+    background-color: #8D141D;
+    line-height: 0;
+    border: solid 1px grey;
+}
+
+
+.profile-details {
+    transition: transform ease-out 250ms;
+}
+
+.profile-card img {
+    transition: transform ease-out 250ms;
+    filter: grayscale(99%);
+}
+
+
+.hidden-info {
+    opacity: 0;
+    transition: opacity eas-out 2s;
+    transition-delay: 200ms;
+}
+
+.profile-card:hover img {
+
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+
+.profile-card:hover .profile-details {
+
+    transform: translateY(0px);
+    border-top: solid 2px #f2f2f2;
+}
+
+.profile-card:hover .player_number {
+
+    border-bottom: solid 2px #f2f2f2;
+
+}
+
+.profile-card:hover .hidden-info {
+
+    opacity: 1;
+}
+
+
+/*media queries*/
+@media (min-width: 1450px) {
+    .hero-image {
+        height: 89vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .navbar-nav,
+    .social-icon {
+        width: 25%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    header {
+        position: static;
+    }
+}
+
+@media (max-width: 767px) {
+    .title-lines {
+        display: none;
+    }
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+    color: transparent;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgb(238 158 61);
 }
