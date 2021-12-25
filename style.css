@@ -664,7 +664,7 @@ h1.academy-heading {
 
 
 .brand-title {
-    font-size: 45px;
+    font-size: 29px !important;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
@@ -686,7 +686,7 @@ h1.academy-heading {
     font-weight: 200;
     text-transform: uppercase;
     transform: rotate(180deg);
-    font-size: 35px;
+    font-size: 24px;
     line-height: 1;
 }
 
@@ -704,7 +704,7 @@ h1.academy-heading {
     font-weight: 800;
     text-transform: uppercase;
     transform: rotate(180deg);
-    font-size: 50px;
+    font-size: 38px;
     line-height: 0.8;
 
 }
