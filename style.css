@@ -37,6 +37,32 @@ z-index: 1000;
     transition: top 1200ms ease-in;
 }
 
+/*loading screen*/
+.loader {
+    background: #010912;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 5000;
+}
+
+.loaderLogo {
+    transform: scale(0.9);
+    opacity: 0.4;
+}
+
+.spinner-border {
+    color: #c1c1c1;
+    border: 0.1em solid currentColor;
+    border-right-color: transparent;
+}
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1420px;
@@ -101,8 +127,6 @@ z-index: 1000;
 
 .my-btn2.shop-page {
     bottom: 0px;
-
-
 }
 
 .my-btn:hover {
@@ -637,13 +661,10 @@ h1.academy-heading {
     border: 3px solid #e8c048;
     width: 180px;
     height: 180px;
-
     transition: filter ease-out 350ms;
 }
 
 .academy-players p {
-
-
     transition: font-weight ease 200ms;
 }
 
@@ -652,16 +673,13 @@ h1.academy-heading {
 }
 
 .academy-players img:hover+p {
-
     font-weight: bold;
 }
 
 /*shop page*/
-
 .hero-image-shop {
     width: 84vw;
 }
-
 
 .brand-title {
     font-size: 29px !important;
@@ -672,14 +690,11 @@ h1.academy-heading {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
     letter-spacing: -3px;
-
 }
 
 .brand-title span {
-
     color: #8d141d;
     font-weight: 800;
-
 }
 
 .vt-text {
@@ -689,10 +704,6 @@ h1.academy-heading {
     font-size: 24px;
     line-height: 1;
 }
-
-
-
-
 
 .vt-text span {
     display: block;
@@ -706,10 +717,7 @@ h1.academy-heading {
     transform: rotate(180deg);
     font-size: 38px;
     line-height: 0.8;
-
 }
-
-
 
 .vt-text2 span {
     display: block;
@@ -719,19 +727,127 @@ h1.academy-heading {
 
 .vt-text.brand2 {
     transform: rotate(0deg);
-
 }
 
 .vt-text2.brand2 {
     transform: rotate(0deg);
-
-
 }
 
+/*shop by category*/
+.shop-category h1 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 35px;
+    position: relative;
+    letter-spacing: 0.14vw;
+}
 
+.grid-ish {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #740F1F;
+}
 
+.grid-ish>* {
+    position: relative;
+    overflow: hidden;
+    transition: background-color ease-out 300ms;
+}
 
+.grid-ish>*:hover {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #eab208;
+    outline-offset: -8px;
+}
+
+.category-img {
+    transition: transform ease-out 250ms;
+}
+
+.grid-ish>*:hover .category-img {
+    transform: scale(1.02);
+}
+
+.grid-ish .flex-item-1 {
+    flex: 1 1 45%;
+}
+
+.grid-ish .category-cta {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.grid-ish .category-cta-small {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.category-cta h3 {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.category-cta-small h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.grid-ish .flex-item-2 {
+    flex: 1 1 45%;
+}
+
+.grid-ish .flex-item-3 {
+    flex: 1 1 33%;
+}
+
+.grid-ish .flex-item-4 {
+    flex: 1 1 33%;
+}
+
+.grid-ish .flex-item-5 {
+    flex: 1 1 33%;
+}
+
+/*.brand-img:hover {
+transform: scale(1.04);
+box-shadow: 3px 3px 15px 8px rgba(0, 0, 0, 0.1);
+outline-style: solid;
+outline-width: 2px;
+outline-color: yellow;
+}
+*/
 /*media queries*/
+@media (max-width: 1024px) {
+    .grid-ish .flex-item-1 {
+        flex: 1 1 100%;
+    }
+
+    .grid-ish .flex-item-2 {
+        flex: 1 1 100%;
+    }
+
+    .grid-ish .flex-item-3 {
+        flex: 1 1 100%;
+    }
+
+    .grid-ish .flex-item-4 {
+        flex: 1 1 100%;
+    }
+
+    .grid-ish .flex-item-5 {
+        flex: 1 1 100%;
+    }
+}
+
 @media (min-width: 1450px) {
     .hero-image {
         height: 89vh;
@@ -744,23 +860,16 @@ h1.academy-heading {
         object-fit: cover;
     }
 
-
     h1.academy-heading {
         font-size: 45px;
     }
 }
 
 @media (min-width: 1024px) {
-
-
     .hero-image-shop {
         width: 60%;
         height: auto;
-
-
     }
-
-
 }
 
 @media (max-width: 1200px) {
