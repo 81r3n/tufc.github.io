@@ -26,7 +26,7 @@ $(document).ready(function() {
             prevScroll = curScroll;
         };
         var toggleHeader = function(direction, curScroll) {
-            if (direction === 2 && curScroll > 87) {
+            if (direction === 2 && curScroll > 10) {
                 //replace 52 with the height of your header in px
                 header.classList.add('hide');
                 prevDirection = direction;
