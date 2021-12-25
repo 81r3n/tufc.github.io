@@ -99,14 +99,19 @@ z-index: 1000;
     letter-spacing: 1px;
 }
 
+.my-btn2.shop-page {
+    bottom: 0px;
+
+
+}
+
 .my-btn:hover {
     background-color: #d0ab3b;
 }
 
 .my-btn2:hover {
-    background-color: #d0ab3b;
-    color: #000;
-    font-weight: 700;
+    background-color: #c09925;
+    color: #fff;
 }
 
 .my-btn.fixture {
@@ -124,9 +129,8 @@ z-index: 1000;
 }
 
 .my-btn.fixture:hover {
-    background-color: #d0ab3b;
-    color: #000;
-    font-weight: bold;
+    background-color: #c09925;
+    color: #fff;
 }
 
 .brand-img {
@@ -628,7 +632,7 @@ h1.academy-heading {
 }
 
 .academy-players img {
-    filter: grayscale(88%);
+    filter: grayscale(60%);
     border-radius: 50%;
     border: 3px solid #e8c048;
     width: 180px;
@@ -637,9 +641,95 @@ h1.academy-heading {
     transition: filter ease-out 350ms;
 }
 
+.academy-players p {
+
+
+    transition: font-weight ease 200ms;
+}
+
 .academy-players img:hover {
     filter: grayscale(0%);
 }
+
+.academy-players img:hover+p {
+
+    font-weight: bold;
+}
+
+/*shop page*/
+
+.hero-image-shop {
+    width: 84vw;
+}
+
+
+.brand-title {
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: -3px;
+
+}
+
+.brand-title span {
+
+    color: #8d141d;
+    font-weight: 800;
+
+}
+
+.vt-text {
+    font-weight: 200;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    font-size: 35px;
+    line-height: 1;
+}
+
+
+
+
+
+.vt-text span {
+    display: block;
+    transform: rotate(90deg);
+    margin: 0;
+}
+
+.vt-text2 {
+    font-weight: 800;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    font-size: 50px;
+    line-height: 0.8;
+
+}
+
+
+
+.vt-text2 span {
+    display: block;
+    transform: rotate(90deg);
+    margin: 0;
+}
+
+.vt-text.brand2 {
+    transform: rotate(0deg);
+
+}
+
+.vt-text2.brand2 {
+    transform: rotate(0deg);
+
+
+}
+
+
+
 
 /*media queries*/
 @media (min-width: 1450px) {
@@ -654,9 +744,23 @@ h1.academy-heading {
         object-fit: cover;
     }
 
+
     h1.academy-heading {
         font-size: 45px;
     }
+}
+
+@media (min-width: 1024px) {
+
+
+    .hero-image-shop {
+        width: 60%;
+        height: auto;
+
+
+    }
+
+
 }
 
 @media (max-width: 1200px) {
